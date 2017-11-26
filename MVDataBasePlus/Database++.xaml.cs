@@ -21,8 +21,18 @@ namespace MVDataBasePlus
     {
         public Database__()
         {
-            FileManager.Initialize();
-            InitializeComponent();
+            System.Windows.Forms.FolderBrowserDialog fbd = new System.Windows.Forms.FolderBrowserDialog();
+            if(fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                FileManager.path = fbd.SelectedPath + "\\";
+                FileManager.Initialize();
+                InitializeComponent();
+            }
+            else
+            {
+                FileManager.Initialize();
+                InitializeComponent();
+            }
         }
 
         private void buttonAdvancedMode_Click(object sender, RoutedEventArgs e)

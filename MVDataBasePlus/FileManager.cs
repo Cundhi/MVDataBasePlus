@@ -10,7 +10,7 @@ namespace MVDataBasePlus
 {
     static class FileManager
     {
-        public static string path = @"F:\gameMod\rpg-rpgmaker\AddJson\data\";
+        public static string path = @"C:\Users\dave0\Documents\Games\TestRPGMakerMV\data\";
         public static Dictionary<string, JArray> jsonDictionary = new Dictionary<string, JArray>();
         public static string[] files = new string[] { @"Actors", @"Animations", @"Armors", @"Classes", @"CommonEvents", @"Enemies", @"Items", @"Skills", @"States", @"System", @"Tilesets", @"Troops", @"Weapons" };
         
